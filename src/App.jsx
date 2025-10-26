@@ -57,8 +57,15 @@ export default function App() {
       </header>
 
       <main className="container">
+
+        {/* Seção Sobre com foto no topo */}
         <section id="about" className="section hero">
-          <div>
+          <div style={{ textAlign: 'center' }}>
+            <img 
+              src="/images/minha-foto.jpg" 
+              alt="Foto da Karina" 
+              style={{ width: '150px', borderRadius: '50%', marginBottom: '15px' }} 
+            />
             <h2>Olá, eu sou <span className="accent">{name}</span></h2>
             <p className="lead">
               Analista de Sistemas (UNOPAR) em formação, com experiência em desenvolvimento web e sistemas.
@@ -81,6 +88,7 @@ export default function App() {
           </aside>
         </section>
 
+        {/* Formação */}
         <section id="formation" className="section">
           <h3>Formação</h3>
           <div className="grid-2">
@@ -103,6 +111,7 @@ export default function App() {
           </div>
         </section>
 
+        {/* Experiência */}
         <section id="experience" className="section">
           <h3>Experiência Profissional</h3>
 
@@ -128,6 +137,7 @@ export default function App() {
           </div>
         </section>
 
+        {/* Projetos */}
         <section id="projects" className="section">
           <div className="projects-header">
             <h3>Projetos do GitHub</h3>
@@ -155,6 +165,7 @@ export default function App() {
           </div>
         </section>
 
+        {/* Contato */}
         <section id="contact" className="section card">
           <h3>Contato</h3>
           <div className="grid-2">
